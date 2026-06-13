@@ -1,106 +1,165 @@
+<!-- ===== INTRODUCTION BANNER ===== -->
+<div align="center">
 
-**Project 3** — An end-to-end NLP solution to automatically rank and score job candidates for Human Resources (HR) roles based on their profiles (job title, location, and network connections).
+![Header Banner](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Hongyu%20|%20AI%20%26%20NLP%20Engineer&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Building%20intelligent%20systems%20with%20LLMs,%20NLP%20%26%20Generative%20AI&descAlignY=58&descSize=16)
 
-This project demonstrates modern text processing techniques, semantic similarity, prompt engineering with large language models (LLMs), and parameter-efficient fine-tuning to predict a **fit score** (0–1) indicating how well a candidate matches HR-related opportunities.
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=4F8CC9&center=true&vCenter=true&width=600&lines=AI+%2F+NLP+Engineer+%F0%9F%A4%96;LLM+Fine-Tuning+Specialist+%E2%9A%A1;Talent-Tech+%26+HR-AI+Builder+%F0%9F%92%BC;Open+to+Collaboration+%F0%9F%9A%80)](https://git.io/typing-svg)
 
-## Project Overview
+[![Profile Views](https://komarev.com/ghpvc/?username=<your-username>&label=Profile%20Views&color=4F8CC9&style=flat-square)](https://github.com/<your-username>)
+[![GitHub followers](https://img.shields.io/github/followers/<your-username>?label=Followers&style=social)](https://github.com/<your-username>)
+[![GitHub stars](https://img.shields.io/github/stars/<your-username>?label=Stars&style=social)](https://github.com/<your-username>)
 
-The goal is to build an intelligent candidate screening tool that mimics HR recruiter judgment using only lightweight profile data:
-- **Input features**: Job title, location, number of connections (e.g., LinkedIn-style).
-- **Output**: A fit score [0, 1] — higher for candidates explicitly aspiring to or working in HR roles.
-- **Dataset**: ~100 anonymized candidate profiles (likely synthetic or public LinkedIn-derived data).
-- **Key challenge**: Accurately interpret varied job titles and boost relevant candidates without labeled training data initially.
+</div>
 
-The project evolves in two parts:
-- **Part I**: Explores multiple embedding-based similarity methods + zero-shot LLM prompting.
-- **Part II**: Fine-tunes an LLM with PEFT/LoRA + SFT for improved, calibrated predictions.
+---
 
-Technologies used:
-- Embeddings: TF-IDF, Word2Vec, GloVe, FastText, BERT (sentence-transformers)
-- LLMs: Llama-3.1-8B-Instruct (quantized), Grok API, attempted Qwen
-- Fine-tuning: Hugging Face Transformers, PEFT (LoRA), TRL (SFTTrainer), bitsandbytes
+## 👋 About Me
 
-## Project Structure
+```yaml
+name: Hongyu
+role: AI / NLP Engineer
+location: Canberra, Australia 🇦🇺
+focus:
+  - Large Language Models (LLMs) & Generative AI
+  - Parameter-Efficient Fine-Tuning (LoRA / PEFT)
+  - Semantic Search & Embedding Systems
+  - HR-Tech & Talent Intelligence Tools
+currently_learning: Agentic AI workflows, RAG pipelines, model distillation
+open_to: Freelance projects, full-time roles, research collaborations
+contact: <your-email@example.com>
+```
 
-## Step-by-Step Project Flow
+🔭 I build **end-to-end AI systems** — from data preprocessing to deployment — with a focus on **practical NLP solutions** that solve real business problems.
 
-### Part I – Baseline & Prompting Approaches
+💡 Recently shipped: an **AI-powered talent sourcing tool** that ranks candidates using fine-tuned LLMs (Llama-3.1 + LoRA), achieving recruiter-grade calibration on minimal hardware.
 
-1. **Data Loading & Preprocessing**  
-   Load candidate DataFrame (id, job_title, location, connection).  
-   Clean text (lowercase, remove special chars).  
-   Parse connections (e.g., "500+" → 500) and normalize logarithmically to [0,1].
+📫 **Open to opportunities** in AI/ML engineering, NLP research, and HR-Tech innovation.
 
-2. **Keyword Boosting**  
-   Binary feature: 1 if title contains phrases like "aspiring human resources" or "seeking human resources".
+---
 
-3. **Semantic Similarity Modeling** (multiple variants compared):  
-   - **TF-IDF + Cosine**: Vectorize text, compare to HR prototype phrase.  
-   - **Word2Vec**: Train custom embeddings, average vectors, cosine sim.  
-   - **Pre-trained GloVe / FastText**: Load embeddings, average, cosine.  
-   - **BERT (MiniLM)**: Contextual sentence embeddings via sentence-transformers.  
-   → Compute similarity to HR prototype ("human resources hr recruiter ...").
+## 🛠️ Tech Stack & Skills
 
-4. **Fit Score Fusion**  
-   Weighted combination:  
-   `fit = 0.65 × keyword + 0.30 × similarity + 0.05 × normalized connections`
+### Languages & Core
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
 
-5. **LLM Prompting (Zero-shot)**  
-   Use Llama-3.1-8B-Instruct (4-bit quantized) and Grok API.  
-   Structured system prompt → JSON output `{"fit": <score>}`.  
-   Greedy decoding + robust JSON parsing with regex fallback.
+### Machine Learning & Deep Learning
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-FFD21E?style=for-the-badge)
 
-**Results**: Strong candidates score ~0.9–1.0; explicit HR intent dominates rankings.
+### NLP & LLMs
+![Transformers](https://img.shields.io/badge/Transformers-FFAA00?style=for-the-badge&logo=huggingface&logoColor=black)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge)
+![PEFT](https://img.shields.io/badge/PEFT%20/%20LoRA-9146FF?style=for-the-badge)
+![bitsandbytes](https://img.shields.io/badge/bitsandbytes-4B0082?style=for-the-badge)
+![Sentence%20Transformers](https://img.shields.io/badge/Sentence--Transformers-005571?style=for-the-badge)
 
-### Part II – Fine-Tuning for Better Calibration
+### Data & MLOps
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-1. **Setup**  
-   Install & import PEFT, TRL, Accelerate, bitsandbytes.
+### Cloud & Tools
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Google Colab](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 
-2. **Model Loading**  
-   Load base causal LLM (likely Llama family) with quantization.
+---
 
-3. **Parameter-Efficient Fine-Tuning (PEFT)**  
-   Apply **LoRA** adapters (low-rank updates).  
-   Use **SFTTrainer** for supervised fine-tuning on task-specific examples.
+## 🚀 Featured Project — AI Talent Sourcing Engine
 
-4. **Training**  
-   1 epoch (~8 min on T4 GPU).  
-   Training loss converges (~0.91).
+> **End-to-end NLP system that ranks job candidates for HR roles using LLMs and PEFT fine-tuning.**
 
-5. **Inference & Evaluation**  
-   Generate fit scores post-fine-tuning.  
-   Observe improved nuance: scores shift from overconfident (many 1.0) to calibrated (0.80–0.95 range).
+<table>
+<tr>
+<td width="50%">
 
-**Results**: Fine-tuned model provides more discriminating, recruiter-friendly rankings.
+### 🎯 What It Does
+- Scores candidate profiles **0–1** for HR-role fit
+- Uses only **lightweight features**: title, location, network
+- Mimics recruiter judgment **without labeled data**
+- Outputs explainable, structured JSON rankings
 
-## Key Learnings & Techniques Demonstrated
+</td>
+<td width="50%">
 
-- Multi-method comparison: classical ML → embeddings → generative LLMs.
-- Prompt engineering for structured JSON output from LLMs.
-- Efficient fine-tuning (LoRA + 4/8-bit quantization) on consumer GPU.
-- Handling noisy real-world text data (job titles, locations).
-- Calibration improvement through domain-specific adaptation.
+### ⚙️ How It's Built
+- **Part I**: TF-IDF, Word2Vec, GloVe, FastText, BERT + zero-shot LLM prompting
+- **Part II**: Llama-3.1-8B fine-tuned with **LoRA + 4-bit quantization**
+- Trained in **~8 min on a single T4 GPU**
+- Achieves **calibrated scores (0.80–0.95)** vs. overconfident baselines
 
-## Results Highlights
+</td>
+</tr>
+</table>
 
-- **Baseline (Part I)**: High precision on explicit HR profiles (fit > 0.9).  
-- **Fine-tuned (Part II)**: Better ranking granularity and reduced overconfidence.  
-- Top candidates consistently include "Aspiring Human Resources", "HR Generalist", etc.
+📂 **[View the project →](https://github.com/<your-username>/<project-repo>)**
 
-## Conclusion & Value for Recruiters / Hiring Managers
+---
 
-This project showcases my ability to design, implement, and iteratively improve an **end-to-end AI-powered talent sourcing tool** — a highly relevant skill in modern HR tech, recruiting platforms, and talent marketplaces.
+## 📊 GitHub Analytics
 
-Contributions include:
-- Rapid prototyping of multiple NLP approaches to solve a real business problem.
-- Transition from heuristic + embedding methods to state-of-the-art LLM prompting.
-- Successful application of **PEFT/LoRA** for efficient model adaptation on limited hardware.
-- Production-ready considerations: quantization, error handling, structured outputs.
+<div align="center">
 
-The result is a practical, explainable system that can prioritize high-potential HR candidates from large applicant pools — reducing manual screening time while maintaining fairness and relevance.
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=<your-username>&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=<your-username>&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
 
-Feel free to explore the notebooks, run them in Colab (GPU recommended), or reach out for questions/discussion. I'm excited to apply similar techniques to real-world talent challenges!
+<img src="https://github-readme-streak-stats.herokuapp.com?user=<your-username>&theme=tokyonight&hide_border=true" />
 
-**Hongyu**  
-Canberra, Australia  
+<img src="https://github-profile-trophy.vercel.app/?username=<your-username>&theme=tokyonight&no-frame=true&row=1&column=7" />
+
+</div>
+
+---
+
+## 📄 Resume / CV
+
+<div align="center">
+
+[![Download Resume](https://img.shields.io/badge/📄%20Download%20My%20Resume-4F8CC9?style=for-the-badge&logoColor=white)](https://github.com/<your-username>/<your-username>/raw/main/Hongyu_Resume.pdf)
+[![View Resume Online](https://img.shields.io/badge/👀%20View%20Online-34A853?style=for-the-badge&logoColor=white)](https://github.com/<your-username>/<your-username>/blob/main/Hongyu_Resume.pdf)
+
+*Tip: Upload `Hongyu_Resume.pdf` to the root of your special profile repo so the links above work directly.*
+
+</div>
+
+---
+
+## 🌐 Connect With Me
+
+<div align="center">
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/<your-handle>)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:<your-email@example.com>)
+[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-FFD21E?style=for-the-badge)](https://huggingface.co/<your-handle>)
+[![Kaggle](https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white)](https://kaggle.com/<your-handle>)
+[![Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@<your-handle>)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://<your-portfolio>.com)
+
+</div>
+
+---
+
+<!-- ===== SEO KEYWORDS (hidden but indexed by GitHub search) ===== -->
+<details>
+<summary>🔍 Keywords</summary>
+
+AI Engineer · NLP Engineer · Machine Learning Engineer · LLM Fine-Tuning · LoRA · PEFT ·
+Hugging Face · Transformers · Llama · Sentence Transformers · Generative AI · RAG · 
+Semantic Search · Python Developer · Data Scientist · HR Tech · Talent Intelligence · 
+Canberra · Australia · Remote · Open to Work · Freelance AI Developer
+
+</details>
+
+<div align="center">
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=100&section=footer)
+
+⭐ *If you find my work interesting, consider starring a repo or reaching out — I'd love to collaborate!*
+
+</div>
