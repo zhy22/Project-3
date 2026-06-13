@@ -98,24 +98,8 @@ contact: <your-email@example.com>
 </tr>
 </table>
 
-📂 **[View the project →](https://github.com/<your-username>/<project-repo>)**
+📂 **[View the project →](https://github.com/zhy22/Project3)**
 
----
-
-## 📊 GitHub Analytics
-
-<div align="center">
-
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=<your-username>&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=<your-username>&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
-
-<img src="https://github-readme-streak-stats.herokuapp.com?user=<your-username>&theme=tokyonight&hide_border=true" />
-
-<img src="https://github-profile-trophy.vercel.app/?username=<your-username>&theme=tokyonight&no-frame=true&row=1&column=7" />
-
-</div>
-
----
 
 ## 📄 Resume / CV
 
