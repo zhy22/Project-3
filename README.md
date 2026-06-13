@@ -141,35 +141,6 @@ flowchart LR
 
 📂 **[View the project →](https://github.com/<your-username>/<project-repo>)**
 
----
-
-## 📊 GitHub Analytics
-
-<div align="center">
-
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=<your-username>&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=<your-username>&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
-
-<img src="https://github-readme-streak-stats.herokuapp.com?user=<your-username>&theme=tokyonight&hide_border=true" />
-
-<img src="https://github-profile-trophy.vercel.app/?username=<your-username>&theme=tokyonight&no-frame=true&row=1&column=7" />
-
-</div>
-
----
-
-## 📄 Resume / CV
-
-<div align="center">
-
-[![Download Resume](https://img.shields.io/badge/📄%20Download%20My%20Resume-4F8CC9?style=for-the-badge&logoColor=white)](https://github.com/<your-username>/<your-username>/raw/main/Hongyu_Resume.pdf)
-[![View Resume Online](https://img.shields.io/badge/👀%20View%20Online-34A853?style=for-the-badge&logoColor=white)](https://github.com/<your-username>/<your-username>/blob/main/Hongyu_Resume.pdf)
-
-> 💡 *Upload `Hongyu_Resume.pdf` to the root of your special profile repo so the buttons above link directly.*
-
-</div>
-
----
 
 ## 🌐 Connect With Me
 
