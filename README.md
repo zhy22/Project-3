@@ -1,7 +1,7 @@
 <!-- ===== HEADER BANNER ===== -->
 <div align="center">
 
-![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20,24&height=240&section=header&text=Hongyu&fontSize=58&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=AI%20%2F%20NLP%20Engineer%20·%20LLM%20Fine-Tuning%20·%20Talent-Tech%20Builder&descAlignY=58&descSize=16)
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20,24&height=240&section=header&text=NLP_project&fontSize=58&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=AI%20%2F%20NLP%20Engineer%20·%20LLM%20Fine-Tuning%20·%20Talent-Tech%20Builder&descAlignY=58&descSize=16)
 
 [![AI Engineer](https://img.shields.io/badge/AI%20%2F%20NLP-Engineer-4F8CC9?style=for-the-badge&logo=openai&logoColor=white)](#)
 [![LLM Fine-Tuning](https://img.shields.io/badge/LLM-Fine--Tuning-9146FF?style=for-the-badge&logo=huggingface&logoColor=white)](#)
